@@ -79,10 +79,19 @@ if (!isset($_SESSION['username'])) {
                                     <label class="form-label">Foto Kegiatan :</label>
                                     <input class="form-control" type="file" id="doc" name="doc">
                                     <br>
-                                    <a class="btn btn-warning" href="download.php?filename=<?=$row['doc']?>">Download</a>
+                                    <?php 
+                                    if ($row['doc'] == "") { ?>
+                                        <img src="https://via.placeholder.com/500x500.png?text=FOTO+KEGIATAN" style="width:100px;height:100px;">
+                                    <?php }else{ ?>
+                                        <img src="file/<?php echo $row['doc']; ?>" style="width:100px;height:100px;">
+                                    <?php } ?>
+                                   
+                           
+                                    
                                 </div>
                                 
                                 <div class="form-group">
+                                <a href="c_kun.php?id=<?php echo $row['id']  ?>" target="_BLANK" class="btn btn-warning text-white">Cetak</a>
                                 <button class="btn btn-success" type="submit">Submit</button>
 				                <a href="kunjungan.php" class="btn btn-danger">Kembali</a>
                                 </div>

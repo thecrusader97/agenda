@@ -49,7 +49,7 @@ if (!isset($_SESSION['username'])) {
                             <th scope="col">No</th>
                             <th scope="col">Tanggal</th>
                             <th scope="col">Uraian Kegiatan Monitoring lapangan</th>
-                          
+                            <th scope="col">Foto Kegiatan</th>
                             <th scope="col">Action</th>
                             
                             </tr>
@@ -65,8 +65,17 @@ if (!isset($_SESSION['username'])) {
                             <th><?php echo $no++; ?></th>
                             <td><?php echo $data['tgl']; ?></td>
                             <td><?php echo $data['kegiatan']; ?></td>
+                            <td>
+                            <?php 
+							if ($data['doc'] == "") { ?>
+								<img src="https://via.placeholder.com/500x500.png?text=FOTO+KEGIATAN" style="width:100px;height:100px;">
+							<?php }else{ ?>
+								<img src="file/<?php echo $data['doc']; ?>" style="width:100px;height:100px;">
+							<?php } ?>
+                            </td>
                            
                             <td>
+                            <a href="c_lap.php?id=<?php echo $data['id']  ?>" target="_BLANK" class="btn btn-success text-white">Cetak</a>
                             <a href="edit_lapangan.php?id=<?php echo $data['id'] ?>" class="btn btn-warning text-white">Edit</a>
 			                <a href="delete_lapangan.php?id=<?php echo $data['id'] ?>" class="btn btn-danger">Hapus</a>
                             </td>

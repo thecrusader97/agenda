@@ -72,20 +72,14 @@ if (!isset($_SESSION['username'])) {
                                 </div>
                                 <div class="form-group">
                                     <label class="form-label">Uraian Kegiatan :</label>
-                                    <input class="form-control" type="text" id="kegiatan" name="kegiatan">
-                                </div>
-                                <div class="form-group">
-                                    <label class="form-label">Jenis Dokumen :</label>
-                                    <select class="form-control"  id="jenis" name="jenis">
-                                        <option >Pilih Jenis Dokumen</option>
-                                        <option value="Dokumen">Dokumen</option>
-                                        <option value="Foto">Foto</option>
-                                    </select>
+                                    <textarea class="form-control" type="text" id="kegiatan" name="kegiatan"></textarea>
                                 </div>
                                 
+                                
                                 <div class="form-group" >
-                                    <label class="form-label">Dokumen Kegiatan :</label>
-                                    <input class="form-control" type="file" id="doc" name="doc">
+                                    <label class="form-label">Dokumen Foto Kegiatan :</label>
+                                    <input class="form-control" type="file" id="doc" name="doc" onchange="readURL(this);">
+                                    <img class="img2" id="blah" src="http://placehold.it/180" alt="your image" />
                                 </div>
                                 
                                 <div class="form-group">

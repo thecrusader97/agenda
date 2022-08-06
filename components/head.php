@@ -38,6 +38,18 @@
             }
         });
     });
+    function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+
+                reader.onload = function (e) {
+                    $('#blah')
+                        .attr('src', e.target.result);
+                };
+
+                reader.readAsDataURL(input.files[0]);
+            }
+        }
 </script>
     <style>
         .MultiCarousel { float: left; overflow: hidden; padding: 15px; width: 100%; position:relative; }
@@ -49,6 +61,13 @@
     .MultiCarousel .rightLst { right:0; }
     
         .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+
+        .img2{
+        max-width:180px;
+        }
+        input[type=file]{
+        padding:10px;
+       }
     </style>
 
 

@@ -34,9 +34,42 @@ if (!isset($_SESSION['username'])) {
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Tugas dan Fungsi</h1>
+                        <h1 class="h3 mb-0 text-gray-800">HOME</h1>
                         
                     </div>
+                    <div class="row">
+
+
+                         <div class="col-sm">
+                                
+                                  
+                        </div>
+
+                      
+
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-sm">
+                            
+                                    <img src="img/1.jpg"  width="50%" height="100%">
+                                    
+                            
+                        </div>
+                        <div class="col-sm">
+                                
+                                  
+                        </div>
+
+                        <!-- Pending Requests Card Example -->
+                        <div class="col-sm">
+                                    <img src="img/2.jpg"  width="50%" height="100%">
+                        </div>
+                        <div class="col-sm">
+                                
+                                  
+                        </div>
+                    </div>
+
+                    <Br>
                     
 
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -70,22 +103,7 @@ if (!isset($_SESSION['username'])) {
 
                    
 
-                    <div class="card shadow mb-4">
-                                
-                             
-                                <div class="card-body">
-                                <div class="text-center">
-                                    <h5 class="m-0 font-weight-bold text-dark ">TUGAS DAN FUNGSI</h5>
-                                </div>
-                                    <p>-</p>
-                                    <p>-</p>
-                                    <p>-</p>
-                                    <p>-</p>
-                                    <p>-</p>
-                                    <p>-</p>
-                                  
-                                </div>
-                            </div>
+                    
 
                     <!-- Content Row -->
 

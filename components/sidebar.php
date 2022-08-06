@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="home.php">
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="tupoksi.php">
                 <div class="sidebar-brand-icon rotate-n-15">
                     
                 </div>
@@ -13,16 +13,16 @@
 
             <!-- Nav Item - Dashboard -->
             <li class="nav-item ">
-                <a class="nav-link" href="home.php">
+                <a class="nav-link" href="tupoksi.php">
                     
                     <span>HOME</span></a>
             </li>
-            <hr class="sidebar-divider my-0">
+            <!-- <hr class="sidebar-divider my-0">
             <li class="nav-item ">
                 <a class="nav-link" href="tupoksi.php">
                     
                     <span>TUPOKSI</span></a>
-            </li>
+            </li> -->
             <hr class="sidebar-divider my-0">
 
             <!-- Nav Item - Pages Collapse Menu -->
@@ -38,8 +38,8 @@
                         <a class="collapse-item text-center" href="lapangan.php">Monitoring Lapangan</a>
                         <a class="collapse-item text-center" href="rapat.php">Rapat</a>
                         <a class="collapse-item text-center" href="kunjungan.php">Kunjungan</a>
-                        <a class="collapse-item text-center" href="home.php">Laporan keuangan Bulanan</a>
-                        <a class="collapse-item text-center" href="home.php">Laporan Kegiatan Triwulan</a>
+                        <a class="collapse-item text-center" href="bulanan.php">Laporan keuangan Bulanan</a>
+                        <a class="collapse-item text-center" href="triwulan.php">Laporan Kegiatan Triwulan</a>
                     
                     </div>
                 </div>

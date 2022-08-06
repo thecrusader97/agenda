@@ -74,6 +74,7 @@ if (!isset($_SESSION['username'])) {
                             </td>
                            
                             <td>
+                            <a href="c_kun.php?id=<?php echo $data['id']  ?>" target="_BLANK" class="btn btn-success text-white">Cetak</a>
                             <a href="edit_kunjungan.php?id=<?php echo $data['id'] ?>" class="btn btn-warning text-white">Edit</a>
 			                <a href="delete_kunjungan.php?id=<?php echo $data['id'] ?>" class="btn btn-danger">Hapus</a>
                             </td>

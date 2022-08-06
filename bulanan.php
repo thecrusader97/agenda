@@ -58,33 +58,25 @@ if (!isset($_SESSION['username'])) {
 
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        <h1 class="h3 mb-0 text-gray-800">Create</h1>
+                        <h1 class="h3 mb-0 text-gray-800">Laporan Bulanan</h1>
                       
                     </div>
                 
                     <div class="card shadow mb-4">
                                 <div class="card-body">
 
-                                <form action="act_rapat.php" method="post" enctype="multipart/form-data">
+                                <form action="#" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label class="form-label">Tanggal Input :</label>
                                     <input class="form-control" type="date" id="tgl" name="tgl">
                                 </div>
-                                <div class="form-group">
-                                    <label class="form-label">Uraian rapat :</label>
-                                    <textarea class="form-control" type="text" id="kegiatan" name="kegiatan"></textarea>
-                                </div>
-                                
-                                
-                                <div class="form-group" >
-                                    <label class="form-label">Dokumen Foto Kegiatan :</label>
-                                    <input class="form-control" type="file" id="doc" name="doc" onchange="readURL(this);">
-                                    <img class="img2" id="blah" src="http://placehold.it/180" alt="your image" />
-                                </div>
+                                <br>
+                               
                                 
                                 <div class="form-group">
+                                <button class="btn btn-warning" type="submit">cetak</button>
                                 <button class="btn btn-success" type="submit">Submit</button>
-				                <a href="rapat.php" class="btn btn-danger">Kembali</a>
+				                <a href="tupoksi.php" class="btn btn-danger">Kembali</a>
                                 </div>
 
                                 </form>
