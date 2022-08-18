@@ -50,7 +50,7 @@ if (!isset($_SESSION['username'])) {
                         <!-- Earnings (Monthly) Card Example -->
                         <div class="col-sm">
                             
-                                    <img src="img/1.jpg"  width="50%" height="100%">
+                                    <img src="../img/1.jpg"  width="50%" height="100%">
                                     
                             
                         </div>
@@ -61,7 +61,7 @@ if (!isset($_SESSION['username'])) {
 
                         <!-- Pending Requests Card Example -->
                         <div class="col-sm">
-                                    <img src="img/2.jpg"  width="50%" height="100%">
+                                    <img src="../img/2.jpg"  width="50%" height="100%">
                         </div>
                         <div class="col-sm">
                                 
@@ -86,28 +86,28 @@ if (!isset($_SESSION['username'])) {
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
+                        <img class="d-block w-100" src="../img/t.svg" alt="First slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="../img/t1.svg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="../img/t2.svg" alt="Third slide">
+                        </div>
+                        <div class="carousel-item">
+                        <img class="d-block w-100" src="../img/t1.svg" alt="Second slide">
+                        </div>
+                        <div class="carousel-item">
                         <img class="d-block w-100" src="img/t.svg" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                        <img class="d-block w-100" src="img/t1.svg" alt="Second slide">
+                        <img class="d-block w-100" src="../img/t2.svg" alt="Third slide">
                         </div>
                         <div class="carousel-item">
-                        <img class="d-block w-100" src="img/t2.svg" alt="Third slide">
+                        <img class="d-block w-100" src="../img/t2.svg" alt="Third slide">
                         </div>
                         <div class="carousel-item">
-                        <img class="d-block w-100" src="img/t1.svg" alt="Second slide">
-                        </div>
-                        <div class="carousel-item">
-                        <img class="d-block w-100" src="img/t.svg" alt="First slide">
-                        </div>
-                        <div class="carousel-item">
-                        <img class="d-block w-100" src="img/t2.svg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                        <img class="d-block w-100" src="img/t2.svg" alt="Third slide">
-                        </div>
-                        <div class="carousel-item">
-                        <img class="d-block w-100" src="img/t1.svg" alt="Second slide">
+                        <img class="d-block w-100" src="../img/t1.svg" alt="Second slide">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

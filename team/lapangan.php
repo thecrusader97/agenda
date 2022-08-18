@@ -36,8 +36,8 @@ if (!isset($_SESSION['username'])) {
                     <!-- Page Heading -->
                     <div class="d-sm-flex align-items-center justify-content-between mb-4">
                         <h1 class="h3 mb-0 text-gray-800">Jadwal Agenda Kegiatan</h1>
-                        <a href="add_lapangan.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-plus fa-sm text-white-50"></i> Create</a>
+                        <!-- <a href="add_lapangan.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
+                                class="fas fa-plus fa-sm text-white-50"></i> Create</a> -->
                     </div>
                 
                     <div class="card shadow mb-4">
@@ -56,7 +56,7 @@ if (!isset($_SESSION['username'])) {
                         </thead>
                         <tbody>
                             <?php
-                            include 'config.php';
+                            include '../config.php';
                             $no = 1;
                             $get_data = mysqli_query($conn,"SELECT * FROM lapangan");
                             while ($data = mysqli_fetch_array($get_data)) {
@@ -70,14 +70,13 @@ if (!isset($_SESSION['username'])) {
 							if ($data['doc'] == "") { ?>
 								<img src="https://via.placeholder.com/500x500.png?text=FOTO+KEGIATAN" style="width:100px;height:100px;">
 							<?php }else{ ?>
-								<img src="file/<?php echo $data['doc']; ?>" style="width:100px;height:100px;">
+								<img src="../file/<?php echo $data['doc']; ?>" style="width:100px;height:100px;">
 							<?php } ?>
                             </td>
                            
                             <td>
                             <a href="c_lap.php?id=<?php echo $data['id']  ?>" target="_BLANK" class="btn btn-success text-white">Cetak</a>
-                            <a href="edit_lapangan.php?id=<?php echo $data['id'] ?>" class="btn btn-warning text-white">Edit</a>
-			                <a href="delete_lapangan.php?id=<?php echo $data['id'] ?>" class="btn btn-danger">Hapus</a>
+                         
                             </td>
                             
                             </tr>

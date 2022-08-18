@@ -2,26 +2,31 @@
  
 include 'config.php';
  
-error_reporting(0);
+// error_reporting(0);
  
-session_start();
+// session_start();
  
-if (isset($_SESSION['username'])) {
-    header("Location: home.php");
-}
+// if (isset($_SESSION['username'])) {
+//     header("Location: home.php");
+// }
  
-if (isset($_POST['submit'])) {
-    $username = $_POST['username'];
-    $password = md5($_POST['password']);
+// if (isset($_POST['submit'])) {
+//     $username = $_POST['username'];
+//     $password = md5($_POST['password']);
  
-    $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-    $result = mysqli_query($conn, $sql);
-    if ($result->num_rows > 0) {
-        $row = mysqli_fetch_assoc($result);
-        $_SESSION['username'] = $row['username'];
-        header("Location: tupoksi.php");
-    } else {
-        echo "<script>alert('username atau password Anda salah. Silahkan coba lagi!')</script>";
+//     $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+//     $result = mysqli_query($conn, $sql);
+//     if ($result->num_rows > 0) {
+//         $row = mysqli_fetch_assoc($result);
+//         $_SESSION['username'] = $row['username'];
+//         header("Location: tupoksi.php");
+//     } else {
+//         echo "<script>alert('username atau password Anda salah. Silahkan coba lagi!')</script>";
+//     }
+// }
+if(isset($_GET['pesan'])){
+    if($_GET['pesan']=="gagal"){
+        echo "<div class='alert'>Username dan Password tidak sesuai !</div>";
     }
 }
  
@@ -63,9 +68,7 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body class="bg-gradient-primary bg">
-    <div class="alert alert-warning" role="alert">
-        <?php echo $_SESSION['error']?>
-    </div>
+   
     
  
 
@@ -92,12 +95,12 @@ if (isset($_POST['submit'])) {
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Login !</h1>
                                     </div>
-                                    <form action="" method="POST" class="user">
+                                    <form action="ceklogin.php" method="POST" class="user">
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control-user" id="username" name="username" placeholder="username..." value="<?php echo $username; ?>" required>
+                                            <input type="text" class="form-control form-control-user" id="username" name="username" placeholder="username..." required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password" value="<?php echo $_POST['password']; ?>" required>
+                                            <input type="password" class="form-control form-control-user" id="password" name="password" placeholder="Password" required>
                                         </div>
 
                                         

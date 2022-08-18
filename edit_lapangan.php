@@ -30,7 +30,7 @@ if (!isset($_SESSION['username'])) {
                 header("location:lapangan.php");
             }
 
-        $options=$row['jenis'];
+     
         ?>
     
 
@@ -73,14 +73,7 @@ if (!isset($_SESSION['username'])) {
                                     <label class="form-label">Uraian Kegiatan :</label>
                                     <input class="form-control" type="text" id="kegiatan" name="kegiatan" value="<?php echo $row['kegiatan']; ?>">
                                 </div>
-                                <div class="form-group">
-                                    <label class="form-label">Jenis Dokumen :</label>
-                                    <select class="form-control"  id="jenis" name="jenis">
-                                        <option>Pilih Jenis Dokumen</option>
-                                        <option value="Dokumen" <?php if($options=="Dokumen") echo 'selected="selected"'; ?>>Dokumen</option>
-                                        <option value="Foto" <?php if($options=="Foto") echo 'selected="selected"'; ?>>Foto</option>
-                                    </select>
-                                </div>
+                                
                                 
                                 <div class="form-group" >
                                     <label class="form-label">Dokumen Kegiatan :</label>
